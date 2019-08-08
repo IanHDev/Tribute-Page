@@ -1,4 +1,5 @@
 html {
+  Setting a base font-size for em calculations
 font-size: 10px;
 }
 
@@ -9,9 +10,9 @@ background-color: black;
 body {
 background: linear-gradient(to bottom, #708090, white);
 font-family: Arial, Helvetica, sans-serif;
-font-size: 1.8em;
+font-size: 1.7rem;
 line-height: 2;
-text-align: center;
+
 margin: 0;
 }
 
@@ -25,9 +26,15 @@ margin: 20px;
 }
 
 #title {
-font-size: 3em;
-align-content: center;
-line-height: 1em;
+font-size: 4rem;
+line-height: 1rem;
+text-align: center;
+}
+
+#title-description {
+  text-align: center;
+  font-size: 2rem;
+
 }
 
 #img-div {
@@ -36,14 +43,13 @@ line-height: 1em;
 
 #image {
 display: block;
-margin-left: auto;
-margin-right: auto;
+margin: 0 auto;
 width: 80%;
 }
 
 @media (aspect-ratio:600px) {
   #image {
-/* this section incomplete. Need to find out how to make a max width of the picture before it doesn't get any bigger. */
+/* this section incomplete. Need to find out how to make a max width of the picture before it doesn't get any bigger */
   }
 }
 
