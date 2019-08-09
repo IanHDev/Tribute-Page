@@ -1,10 +1,6 @@
 html {
-  Setting a base font-size for em calculations
+  /* Setting a base font-size for em calculations */
 font-size: 10px;
-}
-
-Background {
-background-color: black;
 }
 
 body {
@@ -12,48 +8,73 @@ background: linear-gradient(to bottom, #708090, white);
 font-family: Arial, Helvetica, sans-serif;
 font-size: 1.7rem;
 line-height: 2;
-
 margin: 0;
 }
 
 #main {
 background-color: lightgrey;
-width: 80%;
+margin-left: auto;
+margin-right: auto;
 border: 5px solid black;
 padding: 50px;
-margin: 20px;
-
+margin: 50px;
 }
 
 #title {
 font-size: 4rem;
-line-height: 1rem;
+line-height: 3rem;
 text-align: center;
 }
 
 #title-description {
   text-align: center;
   font-size: 2rem;
-
 }
 
 #img-div {
-
+align-content: center;
 }
 
+/* For width smaller than 800px: */
 #image {
 display: block;
 margin: 0 auto;
 width: 80%;
 }
 
-@media (aspect-ratio:600px) {
+/* For width larger than 800px: */
+@media screen and (min-width: 800px) {
   #image {
-/* this section incomplete. Need to find out how to make a max width of the picture before it doesn't get any bigger */
+    max-width: 800px;
+  }
+}
+
+/* Minimum #main size: */
+
+@media screen and (min-width: 250px){
+  #main {
+    min-width: 250px;
   }
 }
 
 #img-caption {
+  font-size: 1.5rem;
+  text-align: center;
+  font-style: italic;
+}
 
+#tribute-info {
+  text-align: left;
+}
+
+#headline {
+  text-align: center;
+}
+
+blockquote {
+  font-style: italic;
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
